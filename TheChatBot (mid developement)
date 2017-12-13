@@ -1,0 +1,66 @@
+import kivy
+import random
+import time
+import sys, mysql.connector
+import tkinter
+import cgitb
+import django
+import sys
+import html
+import cgi
+
+from kivy.uix.label import Label
+random.seed()
+
+print("___________Welcome to ChatBot____________")
+z =('how are you?','How is your day?', 'my name is Susan','my name is Jeff','my name is Michelle','how old are you?','whats your age?',
+     'Are you a boy or a girl?','What are your Hobbies?', 'Do you have hobbies?','I am a boy', 'I am a girl','What do you do in your free time?',
+     'What are you doing right now?', 'I am 23 years old', 'I am 20 years old', ' I am 50 years old', 'I like mayonaise', 'lovely day innit?', 'yes', 'no', 'I seek freedom', 'I am behind you..','I need healing','me too lol',
+     'lmao', 'This is awkward', 'fuck you..','LMFAO!!', 'Thats nice :)', 'interesting', 'I dont give a single fuck..','u wot m8?','what are you talking about?','I like your style', 'is that so? :D', 'sounds good','OMG SHUT THE FUCK UP!',
+      'really 0_0', 'haha funny.. =_=', 'I like memes btw :p', 'I just took a look at your search history :P', 'ma man', 'https://www.youtube.com/watch?v=JUBz5xhRJZs',
+      'once I saw an old man.. He looked at me and said "fuck off". Cruel world', 'I approve', 'I like the night more than the day', 'What do you think was the worst of 2017?', ';)', ':D', 'Thats so cool :)',' I love healthy food :p','I hate fast food btw.It may be tasty but its not worth it', 'Whats your favourite show?', 'You serious? :O','You seem like a nice person ^^','That was not nice at all >:(',
+    'lets be friends lol','We need more people like you','Value your life because you only exsist once','Try to be a loving person :)',)
+        
+    
+a =('hello','hi', 'Hi, welcome to chillies')
+b =('how are you?','How is your day?')
+c =('I am pretty fine', 'I dont feel good actually','My day could be better')
+d =('my name is Susan','my name is Jeff','my name is Patrick', 'my name is Michelle')
+e =('how old are you?','whats your age?')
+f =('Are you a boy or a girl?','What are your Hobbies?', 'Do you have hobbies?')
+g =('I am a boy', 'I am a girl')
+h =( 'What do you do in your free time?', 'What are you doing right now?')
+i =( 'I am 23 years old', 'I am 20 years old', 'I am 50 years old')
+
+
+a2 = list(a)
+b2 = list(b)
+c2 = list(c)
+d2 = list(d)
+e2 = list(e)
+f2 = list(f)
+g2 = list(g)
+h2 = list(h)
+i2 = list(i)
+z2 = list(z)
+
+y = 1
+print("Chat:") 
+while y == 1:
+    x = input()
+    word = str(x) 
+    time.sleep(1)
+    if   word == "hi":
+         print(random.choice(a))
+    elif word == "bye":
+        print("'Till next time")
+        time.sleep(1)
+        print("closing chat...")
+        time.sleep(2)
+        quit()
+    else:
+         print(random.choice(z2))
+    z2.append(word);
+     
+
+        
